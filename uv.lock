@@ -211,7 +211,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "datasets", specifier = ">=4.4.1" },
-    { name = "openpipe-art", specifier = ">=0.5.0" },
+    { name = "openpipe-art", specifier = ">=0.5.2" },
     { name = "skypilot", extras = ["cudo", "do", "fluidstack", "gcp", "lambda", "paperspace", "runpod"], specifier = "==0.9.3" },
 ]
 
@@ -2173,7 +2173,7 @@ wheels = [
 
 [[package]]
 name = "openpipe-art"
-version = "0.5.0"
+version = "0.5.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "litellm" },
@@ -2181,9 +2181,9 @@ dependencies = [
     { name = "typer" },
     { name = "weave" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/12/b6/3b795ec467a84d41928663607f43bc7014e27c0d2c4db7c9f47054c804a8/openpipe_art-0.5.0.tar.gz", hash = "sha256:6cb7261613ccb22bc3aba5a32a5877949d60b8160c0a82f75b8f0adc0a3fc95c", size = 7974571, upload-time = "2025-10-07T05:57:17.588Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/4c/6b/c342530c88d446e542def94804998ee26cef86805906eb9951b18c433cac/openpipe_art-0.5.2.tar.gz", hash = "sha256:a67831bd12eadc8c217848c36a5e917cd57d42c00ae325b6d5174fc78d443257", size = 7984319, upload-time = "2025-11-14T02:09:13.754Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ff/f9/dd96534ee0eb166d937de1cb83ca1d399687be1f9e7588286d259a469bfa/openpipe_art-0.5.0-py3-none-any.whl", hash = "sha256:0092a2c5f35a7dab714bab955425593bfc4756f4883f75645d2b04007a397352", size = 165009, upload-time = "2025-10-07T05:57:15.779Z" },
+    { url = "https://files.pythonhosted.org/packages/05/e2/b5a0ff43b4e81abfb29061e301e2eb0e5806bf242ca74f3248773cce6e75/openpipe_art-0.5.2-py3-none-any.whl", hash = "sha256:bf24bf19eb2fd1791eb49e5f25efb86324d8a01f9ba5c69e3ebdf63c84741e05", size = 168431, upload-time = "2025-11-14T02:09:11.631Z" },
 ]
 
 [[package]]
