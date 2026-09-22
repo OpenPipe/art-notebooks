@@ -214,7 +214,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "datasets", specifier = ">=4.4.1" },
-    { name = "openpipe-art", specifier = "==0.5.20" },
+    { name = "openpipe-art", git = "https://github.com/OpenPipe/ART.git?rev=88d3df23285f56fbcbb4629768ba0fc17ebe2d27" },
     { name = "python-dotenv", specifier = ">=1.1.1" },
     { name = "skypilot", extras = ["cudo", "do", "fluidstack", "gcp", "lambda", "paperspace", "runpod"], specifier = "==0.9.3" },
     { name = "wandb", specifier = ">=0.22.2" },
@@ -2196,7 +2196,7 @@ wheels = [
 [[package]]
 name = "openpipe-art"
 version = "0.5.20"
-source = { registry = "https://pypi.org/simple" }
+source = { git = "https://github.com/OpenPipe/ART.git?rev=88d3df23285f56fbcbb4629768ba0fc17ebe2d27#88d3df23285f56fbcbb4629768ba0fc17ebe2d27" }
 dependencies = [
     { name = "aiohttp" },
     { name = "anthropic" },
@@ -2213,10 +2213,6 @@ dependencies = [
     { name = "typer" },
     { name = "typing-extensions" },
     { name = "weave" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/8c/2b/46de4da75f7006fc8364fd8d7a15fa1c496778e81f9dda38538cf6e1b8d2/openpipe_art-0.5.20.tar.gz", hash = "sha256:3523ac9350efa70e67c18e4bd593136ee6c2bb12a53b02a34ca52382dd7b1329", size = 10920475, upload-time = "2026-09-09T20:01:38.607Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/5e/41/f8d3d43700ffb0ac6c092f31b1118d21ff77ea4fec8a414cd9741f4bd9b6/openpipe_art-0.5.20-py3-none-any.whl", hash = "sha256:52c7c1c0dcc69aadba4697e16f54109893ea7dcf536e503a1a2c3d34f7bbf38b", size = 11097660, upload-time = "2026-09-09T20:01:35.444Z" },
 ]
 
 [[package]]

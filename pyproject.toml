@@ -26,3 +26,6 @@ dev-dependencies = [
     "pyright[nodejs]>=1.1.403",
     "pytest-asyncio>=1.1.0",
 ]
+
+[tool.uv.sources]
+openpipe-art = { git = "https://github.com/OpenPipe/ART.git", rev = "88d3df23285f56fbcbb4629768ba0fc17ebe2d27" }

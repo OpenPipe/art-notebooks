@@ -1,9 +1,12 @@
 Notebooks to demonstrate ART (Agent Reinforcement Trainer) in practice!
 
-The serverless notebooks use `openpipe-art==0.5.20` from PyPI and
+The serverless notebooks use [ART main at `88d3df2`](https://github.com/OpenPipe/ART/commit/88d3df23285f56fbcbb4629768ba0fc17ebe2d27) and
 `Qwen/Qwen3.8-27B` through W&B Training. They require a W&B API key and do not
 require a local GPU. Local-GPU notebooks retain their own model and dependency
 settings.
+
+ART 0.5.20 from PyPI does not yet read the exact token metadata returned by
+W&B Inference (Dynamo). The pinned main revision includes that support.
 
 ## 📒 Notebooks
 
