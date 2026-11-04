@@ -1,19 +1,18 @@
 Notebooks to demonstrate ART (Agent Reinforcement Trainer) in practice!
 
-The serverless notebooks use [ART main at `88d3df2`](https://github.com/OpenPipe/ART/commit/88d3df23285f56fbcbb4629768ba0fc17ebe2d27) and
+The serverless notebooks use [ART 0.5.24](https://github.com/OpenPipe/ART/releases/tag/v0.5.24) and
 `Qwen/Qwen3.8-27B` through W&B Training. They require a W&B API key and do not
 require a local GPU. Local-GPU notebooks retain their own model and dependency
 settings.
 
-Notebook installations pin Weave to `0.54.0`, which supports OpenTelemetry HTTP
-exporter 1.45 and later. Older Weave versions can fail during `weave.init()` with
-`AttributeError: 'OTLPSpanExporter' object has no attribute '_session'`. If you
-already imported ART or Weave, rerun the installation cell, restart the runtime,
-and continue from the environment-variable cell. The serverless installation
-cells pass the active kernel's Python executable to `uv pip install`.
-
-ART 0.5.20 from PyPI does not yet read the exact token metadata returned by
-W&B Inference (Dynamo). The pinned main revision includes that support.
+Weave 0.53.9 and earlier fail during `weave.init()` with OpenTelemetry HTTP
+exporter 1.45 and later: `AttributeError: 'OTLPSpanExporter' object has no
+attribute '_session'`. ART 0.5.24 requires Weave 0.54.0 or later, so the
+serverless installation cells upgrade an older Weave. The local-GPU notebooks
+use older ART releases and pin Weave `0.54.0` directly. If you already imported
+ART or Weave, rerun the installation cell, restart the runtime, and continue
+from the environment-variable cell. The serverless installation cells pass the
+active kernel's Python executable to `uv pip install`.
 
 ## 📒 Notebooks
 

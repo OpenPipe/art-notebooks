@@ -6,11 +6,10 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "datasets>=4.4.1",
-    "openpipe-art==0.5.20",
+    "openpipe-art==0.5.24",
     "python-dotenv>=1.1.1",
     "skypilot[cudo,do,fluidstack,gcp,lambda,paperspace,runpod]==0.9.3",
     "wandb>=0.22.2",
-    "weave==0.54.0",
 ]
 
 [tool.uv]
@@ -27,6 +26,3 @@ dev-dependencies = [
     "pyright[nodejs]>=1.1.403",
     "pytest-asyncio>=1.1.0",
 ]
-
-[tool.uv.sources]
-openpipe-art = { git = "https://github.com/OpenPipe/ART.git", rev = "88d3df23285f56fbcbb4629768ba0fc17ebe2d27" }
