@@ -195,6 +195,7 @@ dependencies = [
     { name = "python-dotenv" },
     { name = "skypilot", extra = ["cudo", "do", "gcp", "runpod"] },
     { name = "wandb" },
+    { name = "weave" },
 ]
 
 [package.dev-dependencies]
@@ -218,6 +219,7 @@ requires-dist = [
     { name = "python-dotenv", specifier = ">=1.1.1" },
     { name = "skypilot", extras = ["cudo", "do", "fluidstack", "gcp", "lambda", "paperspace", "runpod"], specifier = "==0.9.3" },
     { name = "wandb", specifier = ">=0.22.2" },
+    { name = "weave", specifier = "==0.54.0" },
 ]
 
 [package.metadata.requires-dev]
@@ -4513,7 +4515,7 @@ wheels = [
 
 [[package]]
 name = "weave"
-version = "0.53.9"
+version = "0.54.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "cachetools" },
@@ -4528,14 +4530,15 @@ dependencies = [
     { name = "packaging" },
     { name = "polyfile-weave" },
     { name = "pydantic" },
+    { name = "requests" },
     { name = "sentry-sdk" },
     { name = "sniffio" },
     { name = "tenacity" },
     { name = "tzdata", marker = "sys_platform == 'win32'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d7/b5/13e3de57a603e2ead6d85054ad731a05decc3065edee4c13a839deb2bfdc/weave-0.53.9.tar.gz", hash = "sha256:f3c7a7c40a1f817ee89db4b754f849a79e426e7e677bae8e5623c02f2535a5fd", size = 1350587, upload-time = "2026-09-10T21:17:43.65Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a1/b3/c52793f9fd40a1d14b1c23f07dc3974836ceee5997f84b09941c2fb444f8/weave-0.54.0.tar.gz", hash = "sha256:0199a8af7a8f50db4f6fc10f12e2a127c3bcf2147b37fe9abf0eb471deff8206", size = 716418, upload-time = "2026-10-23T17:08:46.786Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/02/d1/4d8881311f9f9b01d7c1613dcc984c7c55f0235cdc194881d987aca82fdf/weave-0.53.9-py3-none-any.whl", hash = "sha256:3a2cfbb1239458379746722604d7122a6d2b2ffd808ad12de6ae7e6f8bd6fd90", size = 1794870, upload-time = "2026-09-10T21:17:41.312Z" },
+    { url = "https://files.pythonhosted.org/packages/a3/9d/782bef4f570b9f1db12720397d5edbe4f61cbf3cd64a4e08f63742834e74/weave-0.54.0-py3-none-any.whl", hash = "sha256:b47ae432e58fd2de9467a3cf451b49787b00eb27f67a69aa4823640214942451", size = 1054003, upload-time = "2026-10-23T17:08:44.431Z" },
 ]
 
 [[package]]

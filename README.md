@@ -5,6 +5,13 @@ The serverless notebooks use [ART main at `88d3df2`](https://github.com/OpenPipe
 require a local GPU. Local-GPU notebooks retain their own model and dependency
 settings.
 
+Notebook installations pin Weave to `0.54.0`, which supports OpenTelemetry HTTP
+exporter 1.45 and later. Older Weave versions can fail during `weave.init()` with
+`AttributeError: 'OTLPSpanExporter' object has no attribute '_session'`. If you
+already imported ART or Weave, rerun the installation cell, restart the runtime,
+and continue from the environment-variable cell. The serverless installation
+cells pass the active kernel's Python executable to `uv pip install`.
+
 ART 0.5.20 from PyPI does not yet read the exact token metadata returned by
 W&B Inference (Dynamo). The pinned main revision includes that support.
 
